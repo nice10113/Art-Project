@@ -1,0 +1,293 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+  font-family: "Chelsea Market", cursive;
+  overflow-x: hidden;
+}
+
+.section-title {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  border-bottom: 2px solid tan;
+  width: 30%;
+  margin: 40px auto;
+}
+
+@media (max-width: 875px) {
+  .section-title {
+    width: auto;
+  }
+}
+.header .header-title {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 3rem;
+  margin-top: 20px;
+}
+
+nav {
+  width: 100%;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  transition: 0.5s;
+}
+nav ul li {
+  padding: 15px;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
+nav ul li a:hover {
+  color: tan;
+  transition: 0.4s;
+}
+
+.wrapper {
+  width: 1100px;
+  margin: 50px auto;
+}
+.wrapper .content-container {
+  max-width: 990px;
+  margin: 0 auto;
+  text-align: center;
+}
+.wrapper .content-container p {
+  text-align: justify;
+  width: 40%;
+  margin: 0 auto;
+}
+.wrapper .content-container .learn-more-btn {
+  border: none;
+  border-bottom: 2px solid tan;
+  color: tan;
+  cursor: pointer;
+  font-size: 1.2em;
+  margin-top: 25px;
+}
+.wrapper .main-img {
+  width: 100%;
+  height: 100vh;
+  background: url("/WaveArt.53163d91.jpg") center no-repeat;
+  background-size: cover;
+  margin: 50px 0;
+}
+.wrapper #about {
+  text-align: center;
+}
+.wrapper #about h1 {
+  margin: 50px auto;
+}
+.wrapper #about .row {
+  display: flex;
+}
+.wrapper #about .row .box {
+  margin: 10px 20px;
+  text-align: justify;
+}
+@media (max-width: 785px) {
+  .wrapper #about .row {
+    display: block;
+  }
+  .wrapper #about .row .box {
+    text-align: center;
+    margin: 20px 10px;
+  }
+  .wrapper #about .row .box p {
+    text-align: justify;
+  }
+}
+
+@media (max-width: 897px) {
+  .wrapper {
+    width: 500px;
+  }
+  .wrapper .content-container p {
+    width: 90%;
+  }
+}
+.lower-mid-img {
+  width: 100%;
+  height: 100vh;
+  background: url("/Draw.03bf8aa6.jpg") center no-repeat;
+  background-size: cover;
+}
+
+#gallery {
+  width: 100%;
+  height: auto;
+}
+#gallery .gallery-container .row {
+  display: flex;
+  justify-content: center;
+}
+#gallery .gallery-container .card {
+  width: 100%;
+  text-align: center;
+  margin: 40px 35px;
+}
+#gallery .gallery-container .card h3 {
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 15px auto;
+}
+#gallery .gallery-container .card .img {
+  width: 90%;
+  height: 30vh;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 4px tan;
+}
+#gallery .gallery-container .card .img-1 {
+  background: url("/Art4.e727cd64.jpg") center no-repeat;
+  background-size: cover;
+}
+#gallery .gallery-container .card .img-2 {
+  background: url("/Art5.99bdec53.jpg") center no-repeat;
+  background-size: cover;
+}
+#gallery .gallery-container .card .img-3 {
+  background: url("/Art6.1a27c6b5.jpg") center no-repeat;
+  background-size: cover;
+}
+#gallery .gallery-container .card .img-4 {
+  background: url("/Art3.0a45ae2b.jpg") center no-repeat;
+  background-size: cover;
+}
+#gallery .gallery-container .card .img-5 {
+  background: url("/Art1.b0a7f7d3.jpg") center no-repeat;
+  background-size: cover;
+}
+#gallery .gallery-container .card .img-6 {
+  background: url("/Art2.82a796ee.jpg") center no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 877px) {
+  #gallery .gallery-container .row {
+    display: block;
+  }
+  #gallery .gallery-container .row .card h3 {
+    display: none;
+  }
+}
+#register {
+  width: 800px;
+  height: auto;
+  margin: 20px auto;
+}
+#register a {
+  color: tan;
+}
+#register .register-form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+#register .register-form .register-field {
+  margin: 20px auto;
+  border: none;
+  border-bottom: 2px solid tan;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  width: 50%;
+}
+#register .register-form .register-btn {
+  padding: 10px 25px;
+  cursor: pointer;
+  width: 20%;
+  margin: 10px auto;
+  background: none;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  border: none;
+  border-bottom: 2px solid tan;
+}
+#register .register-form .register-btn:hover {
+  background: tan;
+  transition: 0.5s;
+  color: #fff;
+}
+
+@media (max-width: 875px) {
+  #register {
+    width: auto;
+    height: 100vh;
+  }
+  #register .register-form {
+    text-align: center;
+  }
+}
+#contact {
+  width: 100%;
+  height: auto;
+  margin: 50px auto;
+  text-align: center;
+}
+#contact .social-media i {
+  margin: 40px 20px;
+  cursor: pointer;
+  font-size: 3em;
+}
+#contact .social-media i:hover {
+  color: tan;
+  transition: 0.5s;
+}
+
+.contact-form {
+  display: flex;
+  justify-content: center;
+}
+.contact-form .email-field {
+  text-transform: uppercase;
+  border: none;
+  border-bottom: 2px solid tan;
+  background: none;
+  color: #000;
+  padding: 5px 25px;
+  margin: 0 10px;
+}
+.contact-form .contact-btn {
+  border: none;
+  text-transform: uppercase;
+  border-bottom: 2px solid tan;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+footer {
+  height: 30vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer h1 {
+  font-size: 3em;
+}
+footer h1 span {
+  color: tan;
+}
+
+/*# sourceMappingURL=/style.97fcb138.css.map */
